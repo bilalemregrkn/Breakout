@@ -16,7 +16,7 @@ public class BallController : MonoBehaviour
 
 	private void Start()
 	{
-		var random = Random.value > .5f ? 1 : -1;
+		var random = Random.value > .5f ? .5f : -.5f;
 		var force = new Vector2(random, -1);
 		_rigidbody2D.AddForce(force.normalized * speed);
 	}
